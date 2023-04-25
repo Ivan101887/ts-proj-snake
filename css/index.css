@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 360px;
+  padding: 17px;
+  margin: 100px auto;
+  border: 5px solid #000;
+  background-color: lightgreen;
+  border-radius: 10px;
+}
+
+.stage {
+  position: relative;
+  width: 316px;
+  height: 316px;
+  border: 3px solid #000;
+}
+
+.snake > div {
+  position: absolute;
+  left: -10px;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border: 1px solid lightgreen;
+}
+
+.food {
+  position: absolute;
+  top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.food > div {
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.panel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 900;
+}
